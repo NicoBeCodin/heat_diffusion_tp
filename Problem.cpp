@@ -280,7 +280,7 @@ void Problem::solve_parallel(bool performance_mode) {
 
   });
 
-
+  
   jacobi_future.wait();
   gauss_future.wait();
 
