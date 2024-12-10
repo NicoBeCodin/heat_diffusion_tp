@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/nico/TP-CHPS/oop_td/heat_equation")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/nico/TP-CHPS/oop_td/heat_equation")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/nico/TP-CHPS/oop_td/heat_equation/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
