@@ -1,5 +1,5 @@
 #include "Timer.h"
-#include <iostream>
+
 
 
 Timer::Timer(const std::string& name)

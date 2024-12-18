@@ -1,9 +1,13 @@
 #ifndef VARIABLE_H
 #define VARIABLE_H
 
+#include "IMesh.h"
 #include <vector>
 #include <string>
-#include "IMesh.h"
+#include <stdexcept>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
 
 
 class Variable{

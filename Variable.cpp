@@ -1,8 +1,5 @@
 #include "Variable.h"
-#include <stdexcept>
-#include <iostream>
-#include <fstream>
-#include <iomanip>
+
 
 Variable::Variable(IMesh * mesh, std::string name) : mesh(mesh), m_name(name){
     if (!mesh) throw std::invalid_argument("Mesh cannot be null");
@@ -34,7 +31,7 @@ void Variable::print(bool saveFile){
             file << std::fixed << std::setprecision(4) << x << " " << values[i] << "\n";
         }
         file.close();
-        std::cout<< "Variable" << m_name << " written to " << filename<<std::endl;
+        std::cout<< "Variable " << m_name << " written to: " << filename<<std::endl;
 
     }
 
