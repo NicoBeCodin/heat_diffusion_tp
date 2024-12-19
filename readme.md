@@ -4,32 +4,22 @@ This project provides a C++ implementation of a 1D stationary heat equation solv
 
 ## Overview
 
-### Equation
+Here's a rewritten version of the section without the math formulas, but with the relevant Wikipedia links for the Jacobi and Gauss-Seidel methods:
 
-We focus on the 1D Laplace equation:
 
-\[
-\Delta u = 0 \quad \text{on } [0,1]
-\]
-
-with Dirichlet boundary conditions \( u(0)=T_1 \) and \( u(1)=T_2 \).
-
-### Methods
 
 1. **Jacobi Iteration**:
-   \[
-   u_i^{k+1} = \frac{u_{i-1}^k + u_{i+1}^k}{2}
-   \]
+   The Jacobi method is an iterative algorithm used for solving systems of linear equations. It is based on the idea of updating the solution vector by using the values from the previous iteration. In each iteration, each element of the solution is updated based on the average of the neighboring elements from the previous iteration.
+
+   For more details, refer to the [Jacobi method Wikipedia page](https://en.wikipedia.org/wiki/Jacobi_method).
 
 2. **Gauss-Seidel Iteration**:
-   \[
-   u_i^{k+1} = \frac{u_{i-1}^{k+1} + u_{i+1}^k}{2}
-   \]
+   The Gauss-Seidel method is a similar iterative technique but improves upon the Jacobi method by using the most recent values as soon as they are computed. This means that in each iteration, the solution vector is updated incrementally as soon as a new value is available, rather than using values from the previous iteration.
 
-We also implement a reference exact solution for a linear temperature profile:
-\[
-u_{\text{exact}}(x) = (T_2 - T_1) x + T_1.
-\]
+   For more information, check the [Gauss-Seidel method Wikipedia page](https://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method).
+
+We also implement a reference exact solution for a linear temperature profile, which provides the exact solution for the system under the given conditions.
+
 
 ## Features
 
