@@ -1,7 +1,3 @@
-Below is a sample `README.md` file you can adapt for your project. Adjust names, paths, and commands as needed, depending on your actual project structure and configuration.
-
----
-
 # Heat Equation Simulation Project
 
 This project provides a C++ implementation of a 1D stationary heat equation solver using iterative methods such as Jacobi and Gauss-Seidel. It demonstrates an object-oriented approach, introduces a flexible software architecture, and progressively adds features like mesh discretization, boundary conditions, iterative solvers, solution validation, performance measurement, and parallelization.
